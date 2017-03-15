@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_register_member"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.ws.sql1234.RegisterMember"
+    android:orientation="vertical">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/etRPassword"
+        android:layout_alignBottom="@+id/tvPassword"
+        android:layout_alignParentEnd="true"
+        android:layout_alignStart="@+id/etRCPassword" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/etRAge"
+        android:layout_alignBottom="@+id/tvRAge"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/tvRCPassword" />
+
+    <Button
+        android:text="Register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnRegister"
+        android:onClick="GRegister"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:text="Password :"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvPassword"
+        android:layout_marginTop="26dp"
+        android:layout_below="@+id/tvUsername"
+        android:layout_alignStart="@+id/tvName" />
+
+    <TextView
+        android:text="Re-enter Password :"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvRCPassword"
+        android:layout_alignBottom="@+id/etRCPassword"
+        android:layout_alignStart="@+id/tvAdminp" />
+
+    <TextView
+        android:text="Age :"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvRAge"
+        android:layout_below="@+id/tvRCPassword"
+        android:layout_alignStart="@+id/tvPassword"
+        android:layout_marginTop="25dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/etRCPassword"
+        android:layout_below="@+id/etRPassword"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/tvRCPassword" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/etRAdminp"
+        android:layout_below="@+id/etRAge"
+        android:layout_alignStart="@+id/etRAge" />
+
+    <TextView
+        android:text="Admin permission :"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvAdminp"
+        android:layout_alignBottom="@+id/etRAdminp"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_marginTop="38dp"
+        android:id="@+id/etRName"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/tvAdminp"
+        android:layout_alignStart="@+id/etRUsername" />
+
+    <TextView
+        android:text="Name :"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvName"
+        android:layout_alignBaseline="@+id/etRName"
+        android:layout_alignBottom="@+id/etRName"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/etRUsername"
+        android:layout_above="@+id/etRPassword"
+        android:layout_alignStart="@+id/etRPassword" />
+
+    <TextView
+        android:text="Username :"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvUsername"
+        android:layout_marginTop="24dp"
+        android:layout_below="@+id/etRName"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>

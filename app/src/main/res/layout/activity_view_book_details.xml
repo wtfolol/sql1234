@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_view_book_details"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.ws.sql1234.ViewBookDetails"
+    android:baselineAligned="false"
+    android:background="@drawable/bg5">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+        android:id="@+id/imageViewFull"
+        android:adjustViewBounds="false"
+        android:cropToPadding="false"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:scaleType="fitCenter"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/tvBkname" />
+
+            <TextView
+        android:text="TextView"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvBkname"
+        android:layout_below="@+id/imageViewFull"
+        android:layout_alignStart="@+id/tvAvailability"
+        android:layout_marginTop="48dp"
+        android:layout_width="wrap_content"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:text="Type in your member ID :"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvPreMemberID" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/etPreborrowID" />
+
+            <Button
+                android:text="Pre-Borrrow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnPreborrow"
+                android:onClick="GPBorrow"/>
+
+    </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

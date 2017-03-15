@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Library Management system</string>
+    <string name="text_pw">Password</string>
+    <string name="text_un">Username</string>
+    <string name="title_activity_main2">Main2Activity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_settings">Settings</string>
+    <string-array name="bcategory">
+        <item>-</item>
+        <item>Fiction</item>
+        <item>Non-fiction</item>
+    </string-array>
+</resources>
